@@ -1,10 +1,30 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
+  font-family: "SUIT", sans-serif;
+  margin: 0 auto;
+  min-width: 390px;
+  max-width: 390px;
+  width: 390px;
+  /* 드래그 방지 */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* body_layout */
+.body_layout {
+  @apply w-full h-screen pt-6 relative bg-black;
+}
+
+/* header_input_box */
+.input_box {
+  @apply w-full px-4 py-3 rounded-[30px] bg-[#E9EAEA] bg-opacity-10 border border-[#E9EAEA] border-opacity-40 shadow-drop-custom text-white text-opacity-60 focus:bg-opacity-20 focus:outline-none focus:text-opacity-100;
 }
