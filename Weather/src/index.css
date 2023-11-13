@@ -21,7 +21,7 @@ input:focus {
 
 /* body_layout */
 .body_layout {
-  @apply w-full h-screen pt-6 relative bg-black;
+  @apply w-full h-screen pt-6 relative bg-[#2E2D2C];
 }
 
 /* header_input_box */

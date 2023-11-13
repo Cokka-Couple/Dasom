@@ -63,7 +63,7 @@
 
 @font-face {
   font-family: "SquadaOne";
-  src: url("./SquadaOne-Regular.ttf") format("truetype");
+  src: url("./SquadaOne-Regular.ttf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }

@@ -39,7 +39,7 @@
     // console 사용에 대한 경고를 발생시키지만, "warn", "error", "info" 는 허용
     "no-console": ["warn", { "allow": ["warn", "error", "info"] }],
     // 선언되었지만 어디에도 사용되지 않는 변수를 보고
-    "no-unused-vars": "error",
+    "no-unused-vars": "off",
     // 코드에 여러 개의 연속된 빈 줄이 없는지 확인
     "no-multiple-empty-lines": "error",
     // Prettier 규칙에 따라 코드 포맷을 적용
