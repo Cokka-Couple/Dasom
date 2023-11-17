@@ -3,6 +3,7 @@ import BodyLayout from "./components/layout/body_layout";
 import MainLayout from "./components/layout/main_layout";
 import SheepIcon from "./assets/icons/sheep_icon";
 import WeatherToday from "./components/weather_today";
+import WeatherWeek from "./components/weather_week";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div className="flex justify-end">
           <SheepIcon />
         </div>
+        <WeatherWeek />
       </MainLayout>
     </BodyLayout>
   );

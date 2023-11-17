@@ -50,8 +50,11 @@ export default function WeatherToday() {
             <div className="mb-1 text-[#E9EAEA] text-xl font-medium">
               {result.name}, {result.sys.country}
             </div>
-            <div className="mb-1 text-[#E9EAEA] text-8xl font-['SquadaOne']">
-              {Math.round(((result.main.temp - 273.15) * 10) / 10)}°C
+            <div className="temp_font mb-1 text-[#E9EAEA] text-8xl font-['SquadaOne']">
+              {Math.round(((result.main.temp - 273.15) * 10) / 10)
+                .toFixed(0)
+                .padStart(2, "0")}
+              °C
             </div>
             <div className="text-[#E9EAEA] text-sm font-light tracking-[0.65em]">
               {formattedDate}
