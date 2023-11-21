@@ -1,5 +1,5 @@
 import { useRecoilValue } from "recoil";
-import { resultDataState } from "../recoil/atoms";
+import { weatherTodayState } from "../recoil/atoms";
 import CloudsIcon from "../assets/icons/clouds_icon";
 import ClearIcon from "../assets/icons/clear_icon";
 import AtmosphereIcon from "../assets/icons/atmosphere_icon";
@@ -13,7 +13,7 @@ import { enUS } from "date-fns/locale";
 
 export default function WeatherToday() {
   // 오늘 날씨 상태
-  const result = useRecoilValue(resultDataState);
+  const result = useRecoilValue(weatherTodayState);
 
   const weather = result?.weather[0].main;
   const weatherIcon =

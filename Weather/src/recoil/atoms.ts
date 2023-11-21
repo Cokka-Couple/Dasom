@@ -1,12 +1,17 @@
 import { atom } from "recoil";
-import { WeatherData } from "../interface/type";
+import { WeatherTimeData, WeatherTodayData } from "../interface/type";
 
 export const locationState = atom({
   key: "locationState",
   default: "",
 });
 
-export const resultDataState = atom<WeatherData | null>({
-  key: "resultDataState",
+export const weatherTodayState = atom<WeatherTodayData | null>({
+  key: "weatherTodayState",
+  default: null,
+});
+
+export const weatherTimeState = atom<WeatherTimeData | null>({
+  key: "weatherTimeState",
   default: null,
 });

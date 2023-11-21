@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useRecoilState, useSetRecoilState } from "recoil";
 import SearchIcon from "../assets/icons/search_icon";
-import { locationState, resultDataState } from "../recoil/atoms";
+import { locationState, weatherTodayState } from "../recoil/atoms";
 import { SyntheticEvent, useEffect, useCallback } from "react";
 
 export default function Header() {
   const [location, setLocation] = useRecoilState(locationState);
-  const setResultData = useSetRecoilState(resultDataState);
+  const setResultData = useSetRecoilState(weatherTodayState);
 
   const url =
     location === ""
